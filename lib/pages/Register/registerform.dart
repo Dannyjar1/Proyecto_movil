@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:proyecto_movil/routes/routes.dart';
 
 class registerform extends StatefulWidget {
   @override
@@ -98,8 +99,8 @@ class _RegisterPageState extends State<registerform> {
               SizedBox(height: 10),
               TextButton(
                 onPressed: () {
-                  // Agrega tu lógica para navegar a la pantalla de inicio de sesión
-                  print('Ir a la pantalla de inicio de sesión');
+                  // Navegar a la pantalla de inicio de sesión al hacer clic en el botón
+                  Navigator.pushNamed(context, Routes.login);
                 },
                 child: Text('¿Ya tienes cuenta? Ingresa aquí'),
               ),

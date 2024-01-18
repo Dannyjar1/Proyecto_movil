@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:proyecto_movil/pages/Home/homeform.dart';
-import 'package:proyecto_movil/pages/Login/loginform.dart';
-import 'package:proyecto_movil/pages/Register/registerform.dart';
+import 'package:proyecto_movil/routes/routes.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,7 +9,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: registerform(),
+      theme: ThemeData(
+        // Puedes personalizar el tema de tu aplicación aquí
+      ),
+      initialRoute: Routes.register,
+      routes: Routes.routes,
     );
   }
 }
