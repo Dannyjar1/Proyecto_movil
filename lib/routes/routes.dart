@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:proyecto_movil/pages/Home/homeform.dart';
-import 'package:proyecto_movil/pages/Login/loginform.dart';
-import 'package:proyecto_movil/pages/Register/registerform.dart';
+import 'package:proyecto_movil/pages/Categorias/CategoriasScreen.dart';
+import 'package:proyecto_movil/pages/Login/LoginScreen.dart';
+import 'package:proyecto_movil/pages/Signup/SignupScreen.dart';
 
 class Routes {
   static const String home = '/';
@@ -9,8 +9,8 @@ class Routes {
   static const String register = '/register';
 
   static final Map<String, WidgetBuilder> routes = {
-    home: (context) => homeform(),
-    login: (context) => loginform(),
-    register: (context) => registerform(),
+    home: (context) => CategoriasScreen(),
+    login: (context) => LoginScreen(),
+    register: (context) => SignupScreen(),
   };
 }
