@@ -121,8 +121,6 @@
 
 
 
-
-
 import 'package:flutter/material.dart';
 
 class SignupScreen extends StatelessWidget {
@@ -186,23 +184,33 @@ class SignupScreen extends StatelessWidget {
               },
             ),
             SizedBox(height: 20),
+            TextButton(
+              child: Text('¿Ya tienes cuenta? Ingresa aquí'),
+              onPressed: () {
+                // Navegar a la pantalla de inicio de sesión
+              },
+              style: TextButton.styleFrom(
+                primary: Colors.white,
+              ),
+            ),
+            SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                // IconButton(
-                //   icon: Image.asset('assets/facebook_logo.png'),
-                //   onPressed: () {
-                //     // Handle Facebook signup logic
-                //   },
-                // ),
-                // SizedBox(width: 20),
-                // IconButton(
-                //   icon: Image.asset('assets/google_logo.png'),
-                //   onPressed: () {
-                //     // Handle Google signup logic
-                //   },
-                // ),
-              ],
+              // children: <Widget>[
+              //   IconButton(
+              //     icon: Image.asset('assets/facebook_logo.png'),
+              //     onPressed: () {
+              //       // Handle Facebook signup logic
+              //     },
+              //   ),
+              //   SizedBox(width: 20),
+              //   IconButton(
+              //     icon: Image.asset('assets/google_logo.png'),
+              //     onPressed: () {
+              //       // Handle Google signup logic
+              //     },
+              //   ),
+              // ],
             ),
           ],
         ),
@@ -222,3 +230,4 @@ class SignupScreen extends StatelessWidget {
     );
   }
 }
+
