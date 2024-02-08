@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         // Puedes personalizar el tema de tu aplicación aquí
       ),
-      initialRoute: Routes.register,
+      initialRoute: Routes.home,
       routes: Routes.routes,
     );
   }

@@ -139,7 +139,7 @@ class SignupScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'Signup',
+              'Registro',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 40,
@@ -187,7 +187,7 @@ class SignupScreen extends StatelessWidget {
             TextButton(
               child: Text('¿Ya tienes cuenta? Ingresa aquí'),
               onPressed: () {
-                // Navegar a la pantalla de inicio de sesión
+                Navigator.pushNamed(context, '/login');
               },
               style: TextButton.styleFrom(
                 primary: Colors.white,

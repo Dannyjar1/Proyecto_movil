@@ -93,7 +93,7 @@ class LoginScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'Login',
+              'Iniciar Sesión',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 40,
@@ -142,11 +142,11 @@ class LoginScreen extends StatelessWidget {
               },
             ),
             SizedBox(height: 20),
-            TextButton(
-              child: Text('¿No tienes cuenta? Regístrate aquí'),
-              onPressed: () {
-                // Navegar a la pantalla de registro
-              },
+        TextButton(
+          child: Text('¿No tienes cuenta? Regístrate aquí'),
+          onPressed: () {
+            Navigator.pushNamed(context, '/register');
+          },
               style: TextButton.styleFrom(
                 primary: Colors.white,
               ),
