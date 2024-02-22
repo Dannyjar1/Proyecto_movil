@@ -1,6 +1,8 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
-    <application
-        android:label="proyecto_movil"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.reserva_canchas_app">
+   <uses-permission android:name="android.permission.INTERNET" />
+   <application
+        android:label="Reserva de Canchas"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

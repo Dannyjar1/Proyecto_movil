@@ -1,19 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:proyecto_movil/routes/routes.dart';
+
+import 'package:get/get.dart';
+
+import 'app/routes/app_pages.dart';
 
 void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        // Puedes personalizar el tema de tu aplicación aquí
-      ),
-      initialRoute: Routes.home,
-      routes: Routes.routes,
-    );
-  }
+  runApp(
+    GetMaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: "Application",
+      initialRoute: AppPages.INITIAL,
+      getPages: AppPages.routes,
+    ),
+  );
 }
